@@ -109,7 +109,7 @@ form{
     position: relative;
 }
 
-input[type="text"]{
+#search{
     width: 90%;
     height: 45px;
     border-radius: 10px;
@@ -195,7 +195,7 @@ input[type="text"]{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    height: 240px;
+    height: 250px;
     flex: 45%;
     margin-right: 5px;
     margin-bottom: 15px;
@@ -232,6 +232,14 @@ input[type="text"]{
 
 .bold {
     font-weight: 800;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.gelo {
+    background: var(--gelo);
 }
 
 @media (min-width:992px) {

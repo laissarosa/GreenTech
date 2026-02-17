@@ -4,7 +4,7 @@ var app = new Framework7({
   // App root element
   el: '#app',
   // App Name
-  name: 'My App',
+  name: 'GreenTech',
   // App id
   id: 'com.myapp.test',
   // Enable swipe panel
@@ -168,6 +168,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/cart.js');
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
@@ -189,6 +190,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
+    $.getScript('js/details.js');
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
