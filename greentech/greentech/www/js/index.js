@@ -1,1 +1,0 @@
-//app.dialog.alert('ola mundo');
