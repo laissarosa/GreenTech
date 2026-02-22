@@ -1,3 +1,12 @@
+<!--
+ Página do Carrinho / Cart Page
+Exibe os produtos adicionados ao carrinho pelo usuário. Displays products added to the user's cart.
+ Estrutura principal / Main structure:
+  - Navbar superior com título e ícones / Top navbar with title and icons 
+  - Popover para opções adicionais / Popover for extra options 
+  - Listagem dos itens do carrinho / Cart items listing 
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -47,11 +56,11 @@
                 </div>
                 </div>
                 <!-- TAB BAR-->
-            <div style="margin-bottom: 110px;" class="toolbar toolbar-bottom">
+            <div id="toolbarTotal" style="margin-bottom: 110px;" class="toolbar toolbar-bottom">
                 <div id="total" class="toolbar-inner display-flex align-items-center justify-content-center">
                     <div class="bd-bottomm w-80 display-flex justify-content-space-between">
                         <span>Subtotal</span>
-                        <span class="bold">R$ 800,00</span>
+                        <span id="subtotal" class="bold"></span>
                     </div>
                     <div class="bd-bottom w-80 display-flex justify-content-space-between">
                         <span>Frete</span>
@@ -60,7 +69,7 @@
                 </div>
             </div>
                 <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="toolbarCheckout" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex align-items-center justify-content-center">
                     <div class="flex-100">
                         <button class="add-cart">Buy Now</button>
@@ -69,33 +78,7 @@
             </div>
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div id="list-cart">
-                        <!--ITEM DO CARRINHO-->
-                        <div class="item-cart">
-                            <div class="area-img">
-                              <img src="img/default.png">  
-                            </div>
-                            <div class="area-details">
-                                <div class="sup">
-                                    <span class="name-prod">Xbox One</span>
-                                    <a class="delete-item" href="#">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </div>
-                                <div class="middle">
-                                    <span>1 TB</span>
-                                </div>
-                                <div class="price-quantity">
-                                    <span>R$ 99.500,00</span>
-                                    <div class="count">
-                                        <a class="minus" href="#">-</a>
-                                        <input readonly class="quantity-item" type="text" value="1">
-                                        <a class="plus" href="#">+</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="list-cart"></div>
                 </div>
             </div>
         </div>
