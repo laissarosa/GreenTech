@@ -28,9 +28,9 @@
   align-items: center;
   justify-content: center;
 
-  border-radius: 50%;           /* deixa circular */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* sombra suave */
-  border: 1px solid #f0f0f0;    /* borda leve */
+  border-radius: 50%;           
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+  border: 1px solid #f0f0f0;   
 }
 
 .page[data-name="favorite_page"] .no-fav strong {

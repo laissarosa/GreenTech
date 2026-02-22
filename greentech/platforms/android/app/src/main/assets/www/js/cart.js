@@ -3,6 +3,7 @@
  * Recupera o carrinho do localStorage e inicializa a renderização.
  * Retrieve cart from localStorage and initialize rendering.
  */
+ 
 var localCart = localStorage.getItem('cart');
 
 if (localCart) {
@@ -13,18 +14,12 @@ if (localCart) {
         renderCart(); // Renderiza o carrinho / Render cart
         calculeTotal(); // Soma total de produtos / Sum total products
     } else {
-        // Mostra mensagem de carrinho vazio / Show empty cart message
         emptyCart();
     }
 } else {
-    // Mostra mensagem de carrinho vazio / Show empty cart message
     emptyCart();
 }
 
-/**
- * Renderiza os itens do carrinho na página.
- * Render cart items on the page.
- */
 function renderCart() {
     $("#list-cart").empty(); // Esvazia área dos itens / Clear items area
     // Percorre o carrinho e alimenta a área / Loop through cart and fill area

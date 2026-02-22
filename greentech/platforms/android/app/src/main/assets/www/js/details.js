@@ -1,4 +1,3 @@
-
 /**
  * Recupera o id do produto selecionado do localStorage.
  * Retrieve selected product id from localStorage.
