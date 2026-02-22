@@ -45,7 +45,10 @@ GreenTech is a fully functional mobile shopping application that simulates a rea
 greentech/
 │
 └── www/
-    │
+    ├── fonts/
+    ├── img/
+    ├── lib/
+    |
     ├── index.html
     ├── details.html
     ├── cart.html
