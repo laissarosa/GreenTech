@@ -41,7 +41,7 @@ GreenTech is a fully functional mobile shopping application that simulates a rea
 - LocalStorage API
 
 ## 📂Project Structure
-`
+```
 greentech/
 │
 └── www/
@@ -66,7 +66,7 @@ greentech/
         ├── carts.css
         ├── favorite_page.css
         └── remixicon/
-`
+```
 
 ## Application Flow
 ### 🏠Home (`index.js`)
@@ -93,7 +93,7 @@ greentech/
 
 Displays confirmation toast
 
-### 🛒Shopping Cart (cart.js)
+### 🛒Shopping Cart (`cart.js`)
 
 - Retrieves cart from `localStorage`
 
@@ -115,7 +115,7 @@ Products are stored locally in `backend.json`.
 
 Example:
 ### JSON
-`
+```
 {
   "id": 1,
   "name": "Airpod",
@@ -129,17 +129,17 @@ Example:
     }
   ]
 }
-`
+```
 
 ## How to Run the Project
 ### 1️⃣ Install Cordova
-`npm install -g cordova`
+```npm install -g cordova```
 ### 2️⃣ Add Android Platform
-`cordova platform add android`
+```cordova platform add android```
 ### 3️⃣ Build the Project
-`cordova build android`
+```cordova build android```
 ### 4️⃣ Run on Device or Emulator
-`cordova run android`
+```cordova run android```
 
 ## 💾 Data Persistence
 
